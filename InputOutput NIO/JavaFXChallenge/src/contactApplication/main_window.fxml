@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contactApplication.Controller">
+
+    <top>
+        <MenuBar>
+            <Menu text="File">
+                <MenuItem text="New"/>
+                <MenuItem text="Exit"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <center>
+        <TableView prefHeight="400" prefWidth="500" fx:id="tableView" >
+            <columns>
+                <TableColumn prefWidth="130" text="First Name" fx:id="firstName">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="firstName"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="130" text="Last Name" fx:id="lastName" >
+                    <cellValueFactory>
+                        <PropertyValueFactory property="lastName"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="150" text="Phone Number" fx:id="phoneNo">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="phoneNo"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="250" text="Notes" fx:id="note">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="notes"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </center>
+
+</BorderPane>
