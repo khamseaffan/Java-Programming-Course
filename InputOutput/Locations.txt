@@ -1,0 +1,6 @@
+0,In Front of Computer
+1,House
+2,Mall
+3,Hill
+4,track
+5,Hotel
